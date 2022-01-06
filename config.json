@@ -5,7 +5,6 @@
             "action": "add",
             "args": {
                 "name": "EU",
-                "country": "./geolite2/GeoLite2-Country-Locations-en.csv",
                 "ipv4": "./geolite2/GeoLite2-Country-Blocks-IPv4.csv",
                 "ipv6": "./geolite2/GeoLite2-Country-Blocks-IPv6.csv",
                 "wantedList": [
@@ -61,7 +60,6 @@
             "action": "add",
             "args": {
                 "name": "NA",
-                "country": "./geolite2/GeoLite2-Country-Locations-en.csv",
                 "ipv4": "./geolite2/GeoLite2-Country-Blocks-IPv4.csv",
                 "ipv6": "./geolite2/GeoLite2-Country-Blocks-IPv6.csv",
                 "wantedList": [
@@ -126,6 +124,7 @@
             "type": "text",
             "action": "output",
             "args": {
+                "outputDir": "./publish",
                 "outputName": "geoip-continent.txt"
             }
         }
