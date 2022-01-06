@@ -124,7 +124,6 @@
             "type": "text",
             "action": "output",
             "args": {
-                "outputDir": "./publish",
                 "onlyIPType": "ipv4"
             }
         }
