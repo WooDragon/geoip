@@ -12,6 +12,13 @@
     ],
     "output": [
         {
+            "type": "maxmindMMDB",
+            "action": "output",
+            "args": {
+                "outputName": "Country.mmdb"
+            }
+        },
+        {
             "type": "v2rayGeoIPDat",
             "action": "output",
             "args": {
