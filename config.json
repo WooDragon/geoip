@@ -125,7 +125,7 @@
             "action": "output",
             "args": {
                 "outputDir": "./publish",
-                "outputName": "geoip-continent.txt"
+                "onlyIPType": "ipv4"
             }
         }
     ]
