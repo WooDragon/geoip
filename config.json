@@ -8,6 +8,10 @@
                 "ipv4": "./geolite2/GeoLite2-Country-Blocks-IPv4.csv",
                 "ipv6": "./geolite2/GeoLite2-Country-Blocks-IPv6.csv"
             }
+        },
+        {
+            "type": "private",
+            "action": "add"
         }
     ],
     "output": [
