@@ -8,15 +8,21 @@
                 "ipv4": "./geolite2/GeoLite2-Country-Blocks-IPv4.csv",
                 "ipv6": "./geolite2/GeoLite2-Country-Blocks-IPv6.csv"
             }
+        }
+    ],
+    "output": [
+        {
+            "type": "maxmindMMDB",
+            "action": "output",
+            "args": {
+                "outputName": "Country.mmdb"
+            }
         },
         {
-            "type": "maxmindGeoLite2CountryCSV",
-            "action": "add",
+            "type": "v2rayGeoIPDat",
+            "action": "output",
             "args": {
-                "name": "continent-eu",
-                "country": "./geolite2/GeoLite2-Country-Locations-en.csv",
-                "ipv4": "./geolite2/GeoLite2-Country-Blocks-IPv4.csv",
-                "ipv6": "./geolite2/GeoLite2-Country-Blocks-IPv6.csv",
+                "outputName": "geoip-continent-eu.dat",
                 "wantedList": [
                     "LC",
                     "AD",
@@ -63,25 +69,6 @@
                     "SM",
                     "UA",
                     "VA"
-                ]
-            }
-        }
-    ],
-    "output": [
-        {
-            "type": "maxmindMMDB",
-            "action": "output",
-            "args": {
-                "outputName": "Country.mmdb"
-            }
-        },
-        {
-            "type": "v2rayGeoIPDat",
-            "action": "output",
-            "args": {
-                "outputName": "geoip-continent-eu-only.dat",
-                "wantedList": [
-                    "continent-eu"
                 ]
             }
         },
